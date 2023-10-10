@@ -1,0 +1,37 @@
+<HTML>
+
+<HEAD>
+   <TITLE>Pagina 06</TITLE>
+   <LINK rel="stylesheet" href="css/style.css" type="TEXT/CSS">
+
+   <SCRIPT src="js/jquery-1.7.2.min.js" ></SCRIPT>
+   <SCRIPT src="js/jquery-ui-1.8.21.custom.min.js" ></SCRIPT>
+   <SCRIPT src="js/script05.js" ></SCRIPT>
+   <SCRIPT type="text/javascript">
+
+   $(document).ready( function() {
+
+      z=4;
+      for(i=0;i<z;i++)
+      {
+         $("#d"+i).click( function() {
+             nl = parseInt($(this).css('left'));
+             if(nl<300)
+             {
+                nl = nl + 100;
+                $(this).css({ 'left':nl });
+             }
+         });
+      }
+
+   });   
+
+   </SCRIPT>
+
+</HEAD>
+
+<BODY>
+</BODY>
+
+</HTML>
+
